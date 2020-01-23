@@ -1,39 +1,29 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import catAndHumanIllustration from '../images/cat-and-human-illustration.svg';
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
+        title='Home'
       />
-
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block mx-auto w-1/2"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold no-underline text-gray-900"
-            href="https://tailwindcss.com/"
-          >
-            Tailwind
-          </a>
-          , a utility-first CSS framework.
-        </p>
-      </section>
+      <div class='py-20' className='heroBG'>
+        <div class='container mx-auto px-6'>
+          <h2 class='text-4xl font-bold mb-2 text-white'>
+            Smart Health Monitoring Wristwatch!
+          </h2>
+          <h3 class='text-2xl mb-8 text-gray-200'>
+            Monitor your health vitals smartly anywhere you go.
+          </h3>
+          <button class='bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider'>
+            Pre Order
+          </button>
+        </div>
+      </div>
     </Layout>
   );
 }
